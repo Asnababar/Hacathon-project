@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Resume Builder</h1>
+        <form id="resume-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="education">Education:</label>
+                <textarea id="education" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="work-experience">Work Experience:</label>
+                <textarea id="work-experience" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="skills">Skills (one per line):</label>
+                <textarea id="skills" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="profile-pic">Profile Picture:</label>
+                <input type="file" id="profile-pic" accept="image/*">
+            </div>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <div id="resume-output" class="resume-output hidden"></div>
+        
+        <div id="share-link" class="hidden">
+            <input type="text" id="resume-url" readonly>
+            <button id="copy-link">Copy Resume Link</button>
+            <button id="download-resume">Download Resume as PDF</button>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
